@@ -91,7 +91,7 @@ const DonationModal = () => {
                                 Support African Institute for Strategic Governance and Policy Research
                             </h2>
                             <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.82rem', margin: '2px 0 0' }}>
-                                Advancing strategic governance and policy research across Africa
+                                Empowering youth climate action in Bauchi State
                             </p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@ const DonationModal = () => {
 
                     {/* Trust note */}
                     <p style={{ textAlign: 'center', color: '#9ca3af', fontSize: '0.75rem', marginTop: '14px', marginBottom: 0 }}>
-                         Secure &amp; encrypted — All contributions fund AISGPR mission programs
+                         Secure &amp; encrypted — All donations fund Bauchi climate programs
                     </p>
                 </div>
             </div>

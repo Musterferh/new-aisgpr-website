@@ -1,134 +1,75 @@
 /* ============================================================
-   CLIMATE WARDEN — articles.js
+   AFRICAN INSTITUTE FOR STRATEGIC GOVERNANCE AND POLICY RESEARCH — articles.js
    All news articles data + dynamic renderer for article.html
    ============================================================ */
 
 const ARTICLES = [
   {
     id: 1,
-    category: 'Youth Day of Service',
-    title: 'Green School, Green Future: A YDoS 2025 Initiative',
-    date: 'October 10, 2025',
-    author: 'Climate Warden Team',
-    readTime: '3 min read',
-    image: 'images/ydos2.jpg',
-    imageCaption: 'Students participating in a Climate Warden workshop at a Bauchi State secondary school.',
+    category: 'Fellowship',
+    title: 'Strategic Leadership Fellowship Launch',
+    date: 'Feb 14, 2026',
+    author: 'AISGPR Core Team',
+    readTime: '5 min read',
+    image: 'images/stragetic.jpg',
+    imageCaption: 'The inaugural session of the Strategic Leadership Fellowship.',
     body: `
-      <p>Every great movement has a beginning. For Climate Warden, that beginning was the Youth Day of Service (YDoS) 2025. Under the theme "Green School, Green Future," Mustapha Muhammad Ali led a dedicated team of volunteers to Federal Low Cost Primary School to tackle environmental illiteracy at its roots.</p>
-      <p>A Day of Impact YDoS is a pan-African youth-led social impact campaign, and our project was selected to represent the power of climate advocacy. We didn't just visit the school; we transformed how the students viewed their environment..</p>
-      <h2>Key Achievements of the YDoS Project</h2>
-      <p>The Pilot Sustainability Club: We inaugurated our very first student-led club, proving that primary school pupils are the most enthusiastic Climate Wardens.</p>
-      <p>Direct Education: Over 50 pupils received their first formal lesson on carbon footprints and biodiversity.</p>
-      <p>Legacy of Growth: The success of this single day of service provided the data and the passion needed to scale Climate Warden into the formal NGO it is today.</p>
-      <p>Youth Day of Service taught us that you don't need a massive budget to start a revolution—you just need a committed team and a local school willing to learn.</p>
-      `
-  },
-  {
-    id: 2,
-    category: 'Campaign',
-    title: 'Success Friends International Academy Students Lead Greening Initiative',
-    date: 'July 7, 2025',
-    author: 'Climate Warden Field Team',
-    readTime: '3 min read',
-    image: 'images/sucess.jpg',
-    imageCaption: 'Success Friends International Academy Students Lead Greening Initiative.',
-    body: `
-      <p>The transformation of Success Friends International Academy into a "Climate Warden School" reached its physical milestone this week. Following their recent education sessions, the students transitioned from the classroom to the field to conduct their first official tree-planting exercise.</p>
-      <h2>Rooting Knowledge in the Soil</h2>
-      <p>The event focused on the practical application of the biodiversity lessons learned earlier in the week. Students were taught how to properly prepare the soil and ensure the long-term survival of their seedlings.</p>
-      <h2>Impact Highlights</h2>
-      <p>Indigenous Species: We planted a variety of hardy, local trees that will provide significant shade and help reduce the "Heat Island" effect on the school premises.</p>
-      <p>Student Ownership: Each student in the Sustainability Club has committed to a maintenance schedule, ensuring the trees are watered and protected as they grow.</p>
-      <p>Community Pride: The school administration has pledged to protect these new green zones, setting an example for other private academies in the area.</p>`
-  },
-  {
-    id: 3,
-    category: 'Education',
-    title: 'Success Friends International Academy Joins the Climate Warden Network',
-    date: 'July 7, 2025',
-    author: 'Climate Warden Team',
-    readTime: '3 min read',
-    image: 'images/cresent.jpg',
-    imageCaption: "Success Friends International Academy Joins the Climate Warden Network.",
-    body: `
-      <p>The mission to climate-proof our schools reached a new milestone this week Climate Warden officially partnered with Success Friends International Academy. This expansion represents the second phase of our school-based outreach, aimed at creating a network of "Green Schools" across the region.</p>
-      <h2>Standardizing Sustainability</h2>
-      <p>Following the successful model established at Crescent Comprehensive, the team delivered an intensive climate education session focused on Biodiversity Loss and Local Adaptation. The students at Success Friends showed remarkable insight, discussing the impacts of local deforestation on their immediate environment.</p>
-      <p>Seeing the same spark of leadership at Success Friends that we saw at Crescent proves that our youth are hungry for environmental knowledge," Founder Mustapha Muhammad Ali remarked. "We aren't just visiting schools; we are building a network.</p>
-      `
-  },
-  {
-    id: 4,
-    category: 'Tree Planting',
-    title: "Crescent Sustainability Club Leads Inaugural Tree Planting Drive",
-    date: 'May 15, 2025',
-    author: 'Climate Warden Team',
-    readTime: '3 min read',
-    image: 'images/tree-planting.jpg',
-    imageCaption: 'Crescent Sustainability Club Leads Inaugural Tree Planting Drive.',
-    body: `
-      <p>Action followed education this week at Crescent Comprehensive School, as the newly formed Sustainability Club rolled up their sleeves for their first official field activity:.</p>
-      <p>Under the guidance of the Climate Warden team, students planted a variety of indigenous tree species selected for their shade-giving properties and resilience to the local climate..</p>
-      <h2>Learning by Doing</h2>
-      <p>The event wasn't just about digging holes; it was a practical lesson in biology and environmental stewardship. Students learned: The "Cooling Effect": How trees act as natural air conditioners for school buildings. Soil Health: The importance of proper mulching and watering techniques for young seedlings. Long-term Care: Each club member was assigned a "Tree Buddy"—a specific sapling they are responsible for nurturing throughout the school year..</p>
-      <p>Watching a student plant their first tree is watching a 'Warden' being born, These trees will grow alongside these students, providing shade for the generations that follow.".</p>`
-  },
-  {
-    id: 5,
-    category: 'Education',
-    title: 'Climate Warden Delivers First Education Module and Inaugurates Student Sustainability Club',
-    date: 'May 8, 2025',
-    author: 'Climate Warden Team',
-    readTime: '3 min read',
-    image: 'images/first-session.jpg',
-    imageCaption: 'Climate Warden Delivers First Education Module and Inaugurates Student Sustainability Club.',
-    body: `
-      <p>Building on the momentum of our FXB Fellowship launch, the Climate Warden team returned to Crescent Comprehensive School to deliver the first official climate education session. This marked the practical start of our mission to integrate environmental literacy into the Nigerian school system..</p>
-      <p>Engaging the Next Generation The session focused on "Climate Change in Our Backyard," helping students understand how global warming affects local weather, agriculture, and health in their own community. The interactive workshop encouraged students to identify environmental challenges within their school premises and propose local solutions..</p>
-      <h2>Highlights of the Session:</h2>
-      <p>Interactive Learning: We used visual aids and local examples to explain biodiversity and the importance of urban trees.
-      Club Formation: The Crescent Sustainability Club was officially formed with its first 25 members. These students have pledged to lead waste-reduction efforts and monitor the school’s green spaces.
-      Warden Kits: We distributed introductory climate guides to club members to help them lead discussions in their respective classrooms..</p>
-      <p>Seeing the students' enthusiasm during the formation of the club confirms that our youth are ready to lead This isn't just a club; it’s a training ground for future environmental defenders..</p>
-      `
-  },
-  {
-    id: 6,
-    category: 'Education',
-    title: 'Climate Warden Launches FXB Fellowship Project at Crescent Comprehensive School ',
-    date: 'May 7, 2025',
-    author: 'Programs Team',
-    readTime: '3 min read',
-    image: 'images/fxb-launch.jpg',
-    imageCaption: 'Climate Warden Launches FXB Fellowship Project at Crescent Comprehensive School.',
-    body: `
-      <p>As part of his final project for the prestigious FXB Climate Advocates Fellowship, Climate Warden Founder Mustapha Muhammad Ali officially launched the "Empowering Youth and Local Communities for Climate and Biodiversity Action" initiative. The launch took place at Crescent Comprehensive School, marking the beginning of a long-term partnership to integrate climate education into the heart of the community..</p>
-      <h2>Sustainable Education in Action</h2>
-      <p>The project focuses on a "Grassroots-First" approach, targeting primary and secondary schools to ensure that climate consciousness starts at a young age. During the launch event, Mustapha engaged with students and faculty to explain the vital link between local biodiversity and global climate resilience.."</p>
-      <h2>Key Components of the Launch</h2>
-      <p>Sustainability Clubs: We officially inaugurated the school's first Sustainability Club, a student-led group dedicated to waste management, tree care, and environmental advocacy.
-
-      Climate Curriculum: The project introduced a specialized climate education module designed to simplify complex environmental issues for young minds.
-
-      ommunity Expansion: While it started at Crescent Comprehensive, this fellowship project is designed to scale across multiple local schools and community centers in the coming months.
-
-      "Education is the most powerful tool for conservation," Mustapha stated during the event. "By forming these clubs, we are handing the leadership of the environment back to the people who will live in it.".</p>
+      <p>We officially launched our flagship Strategic Leadership Fellowship, welcoming the first cohort of dynamic African leaders dedicated to policy innovation and institutional reform. The inaugural session was led by key experts across the continent.</p>
+      <h2>A New Era of Governance</h2>
+      <p>Our curriculum focuses on empowering leaders with the necessary tools to navigate complex governance challenges. Fellows engaged in rigorous analytical frameworks and collaborative problem-solving exercises.</p>
+      <h2>Looking Ahead</h2>
+      <p>This is just the beginning. We anticipate profound impacts on regional policy frameworks as these leaders return to their respective institutions armed with strategic insights and a powerful network.</p>
     `
   },
   {
-    id: 7,
-    category: 'Launch of Climate Warden',
-    title: "Climate Warden Launched in Bauchi State",
-    date: 'December 20, 2025',
-    author: 'Climate Warden Team',
+    id: 2,
+    category: 'Training',
+    title: 'Closing Ceremony of Policy Design Training',
+    date: 'July 7, 2025',
+    author: 'AISGPR Faculty',
     readTime: '3 min read',
-    image: 'images/launch.jpg',
-    imageCaption: 'Launch of Climate Warden.',
+    image: 'images/closing.jpg',
+    imageCaption: 'Participants presenting at the Policy Design Training closing ceremony.',
     body: `
-      <p>In a significant step toward local environmental resilience, Climate Warden officially held its physical launch event, transitioning from a digital advocacy platform to a grassroots operational NGO. The event brought together community leaders, youth activists, and the newly unveiled Climate Warden core team to kickstart a mission of urban reforestation and climate education.
-      <p>Founded by Mustapha Muhammad Ali, Climate Warden was born from a vision to protect Nigerian communities from the escalating threats of climate change, specifically focusing on rising urban temperatures and deforestation.</p>
-      <h2>The Road Ahead</h2>
-      <p>The launch marks the day we put shovels in the ground," said Mustapha during the opening remarks. "Climate Warden is not just about awareness; it is about building a team of 'Guardians' who are equipped to protect and restore our local ecosystems.".</p>`
+      <p>The intensive six-week Policy Design Training concluded today. Participants presented their final policy briefs, demonstrating rigorous analytical frameworks designed to tackle regional governance challenges.</p>
+      <h2>From Theory to Action</h2>
+      <p>Each presentation showcased innovative approaches to deeply entrenched systemic issues. Our faculty praised the depth of research and the practical viability of the proposed policy reforms.</p>
+      <p>The cohort will now transition into our alumni network, where they will continue to receive support as they advocate for these policies at structural levels.</p>
+    `
+  },
+  {
+    id: 3,
+    category: 'Conferences',
+    title: 'Annual Public Policy Dialogue Forum',
+    date: 'May 15, 2025',
+    author: 'AISGPR Events Team',
+    readTime: '3 min read',
+    image: 'images/annual.jpg',
+    imageCaption: 'Panel discussion at the Annual Public Policy Dialogue Forum.',
+    body: `
+      <p>AISGPR hosted its Annual Public Policy Dialogue Forum, bringing together policymakers, academics, and civic leaders to discuss collaborative strategies for strengthening democratic institutions across the continent.</p>
+      <h2>Fostering Cross-Sector Collaboration</h2>
+      <p>The forum provided a crucial platform for debate on pressing governance issues. Keynote speakers emphasized the necessity of bridging the gap between theoretical research and actionable legislation.</p>
+      <h2>Outcomes and Next Steps</h2>
+      <p>Several working groups were formed out of the discussions, tasked with drafting white papers on actionable governance reforms to be presented at the next legislative assembly.</p>
+    `
+  },
+  {
+    id: 4,
+    category: 'Consultation',
+    title: 'Policy Research Consultation',
+    date: 'August 12, 2025',
+    author: 'AISGPR Research Team',
+    readTime: '4 min read',
+    image: 'images/consultation.jpg',
+    imageCaption: 'Stakeholders at the Policy Research Consultation.',
+    body: `
+      <p>AISGPR recently concluded a high-level policy research consultation with key stakeholders, gathering empirical insights to drive evidence-based governance frameworks and institutional reform.</p>
+      <h2>Evidence-Based Strategies</h2>
+      <p>The consultation focused on bridging data gaps in local governance, empowering decision-makers with accurate research to formulate responsive policies.</p>
+      <h2>Next Steps</h2>
+      <p>The insights gathered will inform our upcoming publications and strategic briefs designed to guide sustainable community development.</p>
+    `
   }
 ];
 
@@ -155,7 +96,7 @@ const ARTICLES = [
     return;
   }
 
-  document.title = article.title + ' — Climate Warden';
+  document.title = article.title + ' — African Institute for Strategic Governance and Policy Research';
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.content = article.title;
 
@@ -208,8 +149,8 @@ const ARTICLES = [
             </div>
             <div class="glass-card" style="padding:24px;border-radius:16px">
               <h4 style="font-family:'Poppins',sans-serif;font-size:.95rem;color:#fff;margin-bottom:8px">Get Involved</h4>
-              <p style="font-family:'Inter',sans-serif;font-size:.82rem;color:var(--text-muted);line-height:1.6;margin-bottom:16px">Join Climate Warden as a student volunteer, school partner or supporter.</p>
-              <a href="get-involved.html" class="btn btn-neon" style="width:100%;justify-content:center">Join the Movement</a>
+              <p style="font-family:'Inter',sans-serif;font-size:.82rem;color:var(--text-muted);line-height:1.6;margin-bottom:16px">Join African Institute for Strategic Governance and Policy Research as a policy researcher, institutional partner or supporter.</p>
+              <a href="contact.html" class="btn btn-neon" style="width:100%;justify-content:center">Contact Us</a>
             </div>
           </aside>
         </div>

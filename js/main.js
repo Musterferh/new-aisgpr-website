@@ -1,5 +1,5 @@
 /* ============================================================
-   CLIMATE WARDEN — main.js v2
+   AFRICAN INSTITUTE FOR STRATEGIC GOVERNANCE AND POLICY RESEARCH — main.js v2
    Animations, Scroll Reveals, Particles, Counter, Tabs
    ============================================================ */
 

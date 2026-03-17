@@ -1,4 +1,4 @@
-/* Climate Warden — Donation Modal (React + Tailwind) */
+/* African Institute for Strategic Governance and Policy Research — Donation Modal (React + Tailwind) */
 const { useState, useEffect, useRef } = React;
 
 const DonationModal = () => {
@@ -88,7 +88,7 @@ const DonationModal = () => {
                         }}></div>
                         <div>
                             <h2 style={{ color: '#fff', fontWeight: 800, fontSize: '1.25rem', margin: 0 }}>
-                                Support Climate Warden
+                                Support African Institute for Strategic Governance and Policy Research
                             </h2>
                             <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.82rem', margin: '2px 0 0' }}>
                                 Empowering youth climate action in Bauchi State

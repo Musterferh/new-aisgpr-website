@@ -30,5 +30,5 @@ function stripEmojis(directory) {
     });
 }
 
-stripEmojis('c:\\Climate Warden');
+stripEmojis('c:\\African Institute for Strategic Governance and Policy Research');
 console.log('Done stripping emojis.');

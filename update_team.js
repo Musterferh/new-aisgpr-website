@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const path = 'c:\\Climate Warden\\about.html';
+const path = 'c:\\African Institute for Strategic Governance and Policy Research\\about.html';
 let content = fs.readFileSync(path, 'utf8');
 
 const regex = /<div class="team-grid">[\s\S]*?<\/section>/;

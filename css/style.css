@@ -3817,3 +3817,5 @@ section {
 .chat-input-area button svg {
     margin-left: -2px; /* slight visual optical alignment */
 }
+
+@media (max-width: 768px) { .nav-logo .logo-wordmark { font-size: 0.65rem !important; line-height: 1.1; max-width: 250px; white-space: normal; } }
